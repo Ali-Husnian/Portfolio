@@ -1,11 +1,12 @@
 import profiepic from "../assets/profilepic.png";
 import { TypeAnimation } from "react-type-animation";
 import jsPDF from "jspdf";
+import ShinyEffect from "./ShinyEffect";
 
 const Hero = () => {
   const downloadCV = () => {
     const doc = new jsPDF();
-    doc.static("../assets/alihusnain.pdf");
+    doc.static("../assets/alihusnain.pdf", 10, 10);
     doc.save("cv.pdf");
   };
   return (
@@ -47,6 +48,13 @@ const Hero = () => {
             View work
           </button>
         </div>
+      </div>
+
+      <div className="absolute inset-0 overflow-hidden md:overflow-visible">
+        <div className="hidden md:block">
+          <ShinyEffect left={100} top={200} size={1400} />
+        </div>
+        <ShinyEffect left={-100} top={0} size={1200} />
       </div>
 
       <img

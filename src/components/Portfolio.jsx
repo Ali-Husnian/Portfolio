@@ -6,6 +6,7 @@ import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
 import { AiFillGithub } from "react-icons/ai";
+import ShinyEffect from "./ShinyEffect";
 
 const projects = [
   {
@@ -70,9 +71,9 @@ const Portfolio = () => {
   return (
     <div
       className="relative max-w-[800px] mx-auto p-6 md:my-20 flex flex-col md:flex-row"
-      id="portfolio"
+      id="protfolio"
     >
-      <div className="glass p-6 w-full border-2 max-w-[600px]">
+      <div className="z-10 glass p-6 w-full border-2 max-w-[600px]">
         <div className="w-full h-80 ">
           <img
             src={projects[currentProject].img}
@@ -98,7 +99,13 @@ const Portfolio = () => {
           </a>
         </div>
       </div>
-      <ul className="ml-6 flex flex-row md:flex-col gap-6 flex-wrap justify-center mt-4 md:gap-1">
+      <div className="absolute inset-0 ">
+        <div className="hidden md:block">
+          <ShinyEffect left={100} top={0} size={900} />
+        </div>
+      </div>
+
+      <ul className="z-10 ml-6 flex flex-row md:flex-col gap-6 flex-wrap justify-center mt-4 md:gap-1">
         {projects.map((project, index) => (
           <li
             key={index}

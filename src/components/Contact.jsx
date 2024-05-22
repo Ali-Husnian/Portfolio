@@ -27,7 +27,7 @@ const Contact = () => {
 
       <form
         method="POST"
-        action="#"
+        action="https://getform.io/f/paoxywpb"
         className="max-w-6xl p-5 md:p-12 "
         id="from"
       >
