@@ -1,19 +1,20 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Login from "./pages/LoginPage";
+import SginupPage from "./pages/SginupPage";
+import AdminDashboardPage from "./pages/AdminDashboardPage";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainLayout />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<SginupPage />} />
+          <Route path="/admin" element={<AdminDashboardPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

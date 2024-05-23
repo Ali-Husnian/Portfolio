@@ -1,4 +1,4 @@
-import profiepic from "../assets/profilepic.png";
+import profiepic from "../assets/profile.jpg";
 import { TypeAnimation } from "react-type-animation";
 import jsPDF from "jspdf";
 import ShinyEffect from "./ShinyEffect";
