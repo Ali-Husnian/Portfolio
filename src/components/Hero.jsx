@@ -2,6 +2,7 @@ import profiepic from "../assets/Aliprofile.png";
 import resume from "../assets/alihusnain.pdf";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -36,12 +37,13 @@ const Hero = () => {
           >
             Download CV
           </a>
-          <button
-            className="transform transition-transform hover:scale-105 hover:shadow-lg
+          <Link
+            to="/view-work"
+            className="transform transition-transform hover:scale-105 hover:shadow-lg text-center
           z-10 cursor-pointer font-bold text-gray-200 w-full md:w-1/2 p-2 border border-gray-400 rounded-xl"
           >
             View work
-          </button>
+          </Link>
         </div>
       </div>
 

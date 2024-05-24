@@ -38,7 +38,7 @@ const Navbar = () => {
           </ScrollLink>
           <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
         </li>
-        <li className=" relative pl-3 pr-3 pt-1 text-gray-200 rounded bg-gradient-to-t from-[#50a7c7] via-[#1f7c8f] to-[#3d6ca4]">
+        <li className="relative pl-3 pr-3 pt-1 text-gray-200 rounded bg-gradient-to-t from-[#50a7c7] via-[#1f7c8f] to-[#3d6ca4]">
           <Link to="login">
             <MdLogin />
           </Link>

@@ -3,6 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import Login from "./pages/LoginPage";
 import SginupPage from "./pages/SginupPage";
 import AdminDashboardPage from "./pages/AdminDashboardPage";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<SginupPage />} />
           <Route path="/admin" element={<AdminDashboardPage />} />
+          <Route path="/view-work" element={<Projects />} />
         </Routes>
       </BrowserRouter>
     </>
