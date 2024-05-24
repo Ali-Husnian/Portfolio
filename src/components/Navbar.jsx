@@ -2,7 +2,10 @@ import { useState } from "react";
 import logo from "../assets/logo-1.png";
 import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-scroll";
+import { MdLogin } from "react-icons/md";
+
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,20 +21,26 @@ const Navbar = () => {
       </a>
       <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
         <li className="relative group">
-          <Link to="about" smooth={true} offset={50} duration={500}>
+          <ScrollLink to="about" smooth={true} offset={50} duration={500}>
             About
-          </Link>
+          </ScrollLink>
           <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
         </li>
         <li className="relative group">
-          <Link to="protfolio" smooth={true} offset={50} duration={500}>
+          <ScrollLink to="protfolio" smooth={true} offset={50} duration={500}>
             Protfolio
-          </Link>
+          </ScrollLink>
           <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
         </li>
         <li className="relative group">
-          <Link to="contact" smooth={true} offset={50} duration={500}>
+          <ScrollLink to="contact" smooth={true} offset={50} duration={500}>
             Contact
+          </ScrollLink>
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+        </li>
+        <li className=" relative pl-3 pr-3 pt-1 text-gray-200 rounded bg-gradient-to-t from-[#50a7c7] via-[#1f7c8f] to-[#3d6ca4]">
+          <Link to="login">
+            <MdLogin />
           </Link>
           <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
         </li>
@@ -50,7 +59,7 @@ const Navbar = () => {
       >
         <ul className="font-semibold text-4xl space-y-8 mt-24">
           <li>
-            <Link
+            <ScrollLink
               to="about"
               smooth={true}
               offset={50}
@@ -58,10 +67,10 @@ const Navbar = () => {
               onClick={toggleNav}
             >
               About
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link
+            <ScrollLink
               to="protfolio"
               smooth={true}
               offset={50}
@@ -69,10 +78,10 @@ const Navbar = () => {
               onClick={toggleNav}
             >
               Protfolio
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link
+            <ScrollLink
               to="contact"
               smooth={true}
               offset={50}
@@ -80,7 +89,7 @@ const Navbar = () => {
               onClick={toggleNav}
             >
               Contact
-            </Link>
+            </ScrollLink>
           </li>
         </ul>
       </div>
