@@ -14,8 +14,8 @@ const projects = [
     title: "Project 1",
     description: "UI forn frontend development using React.",
     links: {
-      github: "https://github.com/",
-      site: "https://dribbble.com/shots/16533178-UI-Kit-React-Template",
+      github: "https://github.com/Ali-Husnian/Trillo",
+      site: "https://trillo-steel.vercel.app/",
     },
   },
   {
@@ -23,8 +23,8 @@ const projects = [
     title: "Project 2",
     description: "UI forn frontend development using React.",
     links: {
-      github: "https://github.com/",
-      site: "https://dribbble.com/shots/16533178-UI-Kit-React-Template",
+      github: "https://github.com/Ali-Husnian/Portfolio",
+      site: "https://portfolio-seven-omega-24.vercel.app/",
     },
   },
   {
@@ -32,8 +32,8 @@ const projects = [
     title: "Project 3",
     description: "UI forn frontend development using React.",
     links: {
-      github: "https://github.com/",
-      site: "https://dribbble.com/shots/16533178-UI-Kit-React-Template",
+      github: "https://github.com/Ali-Husnian/Nexter",
+      site: "https://nexter-inky.vercel.app/",
     },
   },
   {
@@ -41,8 +41,8 @@ const projects = [
     title: "Project 4",
     description: "UI forn frontend development using React.",
     links: {
-      github: "https://github.com/",
-      site: "https://dribbble.com/shots/16533178-UI-Kit-React-Template",
+      github: "https://github.com/Ali-Husnian/Natours",
+      site: "https://natours-five-blush.vercel.app/",
     },
   },
   {
@@ -50,8 +50,8 @@ const projects = [
     title: "Project 5",
     description: "UI forn frontend development using React.",
     links: {
-      github: "https://github.com/",
-      site: "https://dribbble.com/shots/16533178-UI-Kit-React-Template",
+      github: "https://github.com/Ali-Husnian/trybase",
+      site: "https://trybase-52b342eb6ac0.herokuapp.com/",
     },
   },
   {
@@ -59,8 +59,8 @@ const projects = [
     title: "Project 6",
     description: "UI forn frontend development using React.",
     links: {
-      github: "https://github.com/",
-      site: "https://dribbble.com/shots/16533178-UI-Kit-React-Template",
+      github: "https://github.com/Ali-Husnian/Job_frontend_mern",
+      site: "https://job-frontend-mern-1.onrender.com/jobs",
     },
   },
 ];
