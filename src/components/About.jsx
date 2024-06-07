@@ -1,5 +1,5 @@
 import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png"; // Ensure you have the correct image path
+import project2 from "../assets/project4.png"; // Ensure you have the correct image path
 import project3 from "../assets/project3.png"; // Ensure you have the correct image path
 
 import {

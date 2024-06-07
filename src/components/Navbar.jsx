@@ -16,9 +16,9 @@ const Navbar = () => {
 
   return (
     <div className="flex text-2xl justify-between text-gray-200 items-center px-6 max-w-[1300px] h-24 mx-auto">
-      <a href="/">
+      <Link to="/">
         <img src={logo} alt="logo" width="100px" className="cursor-pointer" />
-      </a>
+      </Link>
       <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
         <li className="relative group">
           <ScrollLink to="about" smooth={true} offset={50} duration={500}>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
         </li>
         <li className="relative group">
-          <ScrollLink to="protfolio" smooth={true} offset={50} duration={500}>
+          <ScrollLink to="portfolio" smooth={true} offset={50} duration={500}>
             Protfolio
           </ScrollLink>
           <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
