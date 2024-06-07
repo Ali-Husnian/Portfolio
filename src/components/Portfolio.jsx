@@ -7,7 +7,7 @@ const Portfolio = () => {
   const [currentProject, setCurrentProject] = useState(null);
 
   useEffect(() => {
-    fetch("/api/projects")
+    fetch("https://portfolio-server-theta-liart.vercel.app/projects")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data.projects);

@@ -24,14 +24,14 @@ const ProjectManagement = () => {
 
   // Fetch projects from backend
   useEffect(() => {
-    fetch("/api/projects")
+    fetch("https://portfolio-server-theta-liart.vercel.app/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data.projects))
       .catch((error) => console.error("Error fetching projects:", error));
   }, []);
 
   const loader = () => {
-    fetch("/api/projects")
+    fetch("https://portfolio-server-theta-liart.vercel.app/projects")
       .then((res) => res.json())
       .then((data) => data.projects)
       .catch((error) => console.error("Error fetching projects:", error));
@@ -104,13 +104,16 @@ const ProjectManagement = () => {
         location.reload();
       } else {
         // Add new project
-        const response = await fetch("/api/projects", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(form),
-        });
+        const response = await fetch(
+          "https://portfolio-server-theta-liart.vercel.app/projects",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(form),
+          }
+        );
         if (!response.ok) throw new Error("Failed to add project");
         const newProject = await response.json();
         setProjects([...projects, newProject]);
@@ -141,9 +144,12 @@ const ProjectManagement = () => {
   const handleDelete = async (index) => {
     try {
       const projectId = projects[index]._id;
-      const response = await fetch(`/api/projects/${projectId}`, {
-        method: "DELETE",
-      });
+      const response = await fetch(
+        `https://portfolio-server-theta-liart.vercel.app/projects/${projectId}`,
+        {
+          method: "DELETE",
+        }
+      );
       if (!response.ok) throw new Error("Failed to delete project");
       const updatedProjects = projects.filter((_, i) => i !== index);
       setProjects(updatedProjects);
